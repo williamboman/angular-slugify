@@ -20,8 +20,11 @@ For example, “Man Bites Dog” might produce the slug `man-bites-dog` for the 
 
 ### Bower
 ```bash
-$ bower install angular-slugify
+$ bower install wb-angular-slugify
 ```
+
+### Download
+[Click here to download.](https://github.com/williamboman/angular-slugify/releases/download/v1.0.1/angular-slugify.min.js)
 
 ## Usage
 
