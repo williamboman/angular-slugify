@@ -6,6 +6,7 @@ var slugTestCases = [
       "jack-jill-like-numbers-123-and-4-and-silly-characters"]
     ,["Un éléphant à l'orée du bois", "un-elephant-a-loree-du-bois"]
     ,["Iñtërnâtiônàlizætiøn", "internationalizaetion"]
+    ,['щЫПЮ', 'schipyu']
 ];
 
 describe("slugify-service", function() {
