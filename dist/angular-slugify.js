@@ -249,7 +249,75 @@
         'ż': "z",
         'Ž': "Z",
         'ž': "z",
-        'ſ': "s"
+        'ſ': "s",
+
+        // Cyrillic
+        "Ё":"YO",
+        "Й":"I",
+        "Ц":"TS",
+        "У":"U",
+        "К":"K",
+        "Е":"E",
+        "Н":"N",
+        "Г":"G",
+        "Ш":"SH",
+        "Щ":"SCH",
+        "З":"Z",
+        "Х":"H",
+        "Ъ":"'",
+        "ё":"yo",
+        "й":"i",
+        "ц":"ts",
+        "у":"u",
+        "к":"k",
+        "е":"e",
+        "н":"n",
+        "г":"g",
+        "ш":"sh",
+        "щ":"sch",
+        "з":"z",
+        "х":"h",
+        "ъ":"'",
+        "Ф":"F",
+        "Ы":"I",
+        "В":"V",
+        "А":"a",
+        "П":"P",
+        "Р":"R",
+        "О":"O",
+        "Л":"L",
+        "Д":"D",
+        "Ж":"ZH",
+        "Э":"E",
+        "ф":"f",
+        "ы":"i",
+        "в":"v",
+        "а":"a",
+        "п":"p",
+        "р":"r",
+        "о":"o",
+        "л":"l",
+        "д":"d",
+        "ж":"zh",
+        "э":"e",
+        "Я":"Ya",
+        "Ч":"CH",
+        "С":"S",
+        "М":"M",
+        "И":"I",
+        "Т":"T",
+        "Ь":"'",
+        "Б":"B",
+        "Ю":"YU",
+        "я":"ya",
+        "ч":"ch",
+        "с":"s",
+        "м":"m",
+        "и":"i",
+        "т":"t",
+        "ь":"'",
+        "б":"b",
+        "ю":"yu"
     };
 
     function _slugify(s) {
@@ -257,7 +325,8 @@
         var ascii = [];
         var ch, cp;
         for (var i = 0; i < s.length; i++) {
-            if ((cp = s.charCodeAt(i)) < 0x180) {
+            cp = s.charCodeAt(i);
+            if (_inCharMap(cp)) {
                 ch = String.fromCharCode(cp);
                 ascii.push(charmap[ch] || ch);
             }
@@ -265,6 +334,10 @@
         s = ascii.join("");
         s = s.replace(/[^\w\s-]/g, "").trim().toLowerCase();
         return s.replace(/[-\s]+/g, "-");
+    }
+
+    function _inCharMap(cp) {
+      return cp < 0x180 || (cp > 0x0400 && cp < 0x04FF);
     }
 
     mod.factory("Slug", function () {

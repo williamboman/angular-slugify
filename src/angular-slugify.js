@@ -302,7 +302,8 @@
         var ascii = [];
         var ch, cp;
         for (var i = 0; i < s.length; i++) {
-            if ( cp = s.charCodeAt(i) ) {
+            cp = s.charCodeAt(i);
+            if (_inCharMap(cp)) {
                 ch = String.fromCharCode(cp);
                 ascii.push(charmap[ch] || ch);
             }
@@ -310,6 +311,10 @@
         s = ascii.join("");
         s = s.replace(/[^\w\s-]/g, "").trim().toLowerCase();
         return s.replace(/[-\s]+/g, "-");
+    }
+
+    function _inCharMap(cp) {
+      return cp < 0x180 || (cp > 0x0400 && cp < 0x04FF);
     }
 
     mod.factory("Slug", function () {
