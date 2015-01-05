@@ -1,6 +1,6 @@
 {
   "name": "wb-angular-slugify",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "dist/angular-slugify.min.js",
   "dependencies": {
     "angular": "^1"

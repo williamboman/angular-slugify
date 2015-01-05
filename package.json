@@ -1,6 +1,6 @@
 {
-  "name": "angular-slugify",
-  "version": "1.0.1",
+  "name": "wb-angular-slugify",
+  "version": "1.1.0",
   "scripts": {
     "test": "grunt test"
   },
