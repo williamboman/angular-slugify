@@ -348,4 +348,6 @@
             return Slug.slugify(input);
         };
     }]);
+
+    module.exports = mod;
 })();
