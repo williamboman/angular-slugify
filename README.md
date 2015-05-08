@@ -30,7 +30,9 @@ $ bower install wb-angular-slugify
 ## Usage
 
 Include `angular-slugify.js` in your HTML document somewhere after you have set
-up AngularJS.
+up AngularJS or can install it with npm
+
+`npm install angular-slugify` and add `require('angular-slugify');` to your bundle.
 
 Make `slugifier` a dependency in your AngularJS app.
 
