@@ -1,5 +1,5 @@
 /*
- *	Copyright © 2015 Paul Smith <paulsmith@pobox.com>
+ *	Copyright © 2015 Paul Smith <paulsmith@pobox.com>, William Boman <william@redwill.se>
  *	
  *	Permission is hereby granted, free of charge, to any person obtaining a copy
  *	of this software and associated documentation files (the “Software”), to deal
@@ -371,4 +371,8 @@
             return Slug.slugify(input);
         };
     }]);
+
+    if (typeof module === 'object' && typeof module.exports === 'object') {
+      module.exports = mod;
+    }
 })();

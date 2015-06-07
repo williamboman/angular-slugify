@@ -1,8 +1,12 @@
 {
   "name": "wb-angular-slugify",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Provides “slugification” for AngularJS in the form of a service, filter, and a directive.",
   "main": "dist/angular-slugify.js",
+  "authors": [
+    "Paul Smith <paulsmith@pobox.com>",
+    "William Boman <william@redwill.se>"
+  ],
   "directories": {
     "test": "test"
   },

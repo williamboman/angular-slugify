@@ -30,7 +30,7 @@ $ npm install wb-angular-slugify
 ```
 
 ### Download
-[Click here to download.](https://github.com/williamboman/angular-slugify/releases/download/v1.1.0/angular-slugify.min.js)
+[Click here to download.](https://github.com/williamboman/angular-slugify/releases/download/v1.2.0/angular-slugify.min.js)
 
 ## Usage
 
