@@ -1,4 +1,4 @@
-***This is a fork that fixes some issues. It has its own bower package (wb-angular-slugify).***
+***This is an _active_ fork that fixes some issues and has new features. It has its own bower/npm package (wb-angular-slugify).***
 # angular-slugify
 
 Provides “slugification” for AngularJS in the form of a service, filter, and
@@ -24,15 +24,15 @@ For example, “Man Bites Dog” might produce the slug `man-bites-dog` for the 
 $ bower install wb-angular-slugify
 ```
 
+### npm
+```bash
+$ npm install wb-angular-slugify
+```
+
 ### Download
 [Click here to download.](https://github.com/williamboman/angular-slugify/releases/download/v1.1.0/angular-slugify.min.js)
 
 ## Usage
-
-Include `angular-slugify.js` in your HTML document somewhere after you have set
-up AngularJS or can install it with npm
-
-`npm install angular-slugify` and add `require('angular-slugify');` to your bundle.
 
 Make `slugifier` a dependency in your AngularJS app.
 
